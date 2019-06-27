@@ -1,0 +1,54 @@
+This is the rat that ate the malt that lay in the house that Jack built.
+
+This is the house that Jack built.
+
+Number of unique unigrams in train is 12, so V = 12 + 1 = 13
+Number of words in the test sentence is 7, so N = 7.
+
+train: <s1> <s2> This is the rat that ate the malt that lay in the house that Jack built <end>
+
+test: <s1> <s2> This is the house that Jack built <end>
+
+-----------------------
+i=1
+<s1> <s2> This
+<s1> <s2>
+2/14
+-----------------------
+i=2
+<s2> This is
+<s2> This
+2/14
+-----------------------
+i=3
+This is the
+This is
+2/14
+-----------------------
+i=4
+is the house
+is the
+1/14
+-----------------------
+i=5
+the house that
+the house
+2/14
+-----------------------
+i=6
+house that Jack
+house that
+2/14
+-----------------------
+i=7
+that Jack built
+that Jack
+2/14
+-----------------------
+i=8
+Jack built <end>
+Jack built
+2/14
+-----------------------
+
+perplexity = (((1/7)**7)*(1/14))**(-1/7) = 10.205413747033985
