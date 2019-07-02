@@ -1,0 +1,13 @@
+1-Find tags with the best quality on validation and test data.
+
+On validation data "company" has F1=60.22, and "geo-loc" has F1=55.72
+On test data "geo-loc" has F1=62.02, and "company" has F1=51.80 
+
+
+2-Find tags with the worst quality on validation and test data.
+On validation data "tvshow" has F1=0.00, and "movie" has F1=0.00
+On test data "tvshow" has F1=0.00, and "movie" has F1=0.00
+
+
+3-What is the percentage of the correct phrases on test data?
+precision = (234/525)*100=44.57%
